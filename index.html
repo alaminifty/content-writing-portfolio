@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Amin Ifty | Professional Content Writer Portfolio</title>
+    <!-- Load Tailwind CSS CDN for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Styles for Inter Font and Background */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Dark background inspired by professional code editors */
+            color: #e5e7eb;
+            transition: all 0.3s ease;
+        }
+        /* Custom scrollbar for better aesthetics */
+        body::-webkit-scrollbar { width: 8px; }
+        body::-webkit-scrollbar-thumb { background-color: #3b82f6; border-radius: 4px; }
+        body::-webkit-scrollbar-track { background-color: #1f2937; }
+
+        /* Keyframe for subtle hero animation */
+        @keyframes slideIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .animate-slideIn { animation: slideIn 1s ease-out; }
+        
+        /* Modal Backdrop */
+        .modal-backdrop {
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+            z-index: 50;
+        }
+
+        /* Portfolio Item Hover Effect */
+        .portfolio-card:hover {
+            box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.25);
+            transform: translateY(-5px);
+        }
+        
+        /* Custom Tailwind Styling for Skills Pills (UPDATED for better visual weight) */
+        .skill-pill {
+            /* Increased padding (px-6 py-2.5) for more visual separation */
+            @apply bg-gray-900/40 border border-blue-600/30 text-blue-300 px-6 py-2.5 rounded-full font-semibold text-sm shadow-md cursor-default;
+            transition: all 0.3s ease-in-out; /* Ensures smooth transition for all properties */
+            display: inline-block; /* Necessary for transform (scale) to work */
+        }
+        .skill-pill:hover {
+            /* Hover styles: change color and scale up slightly */
+            @apply bg-blue-600 text-white;
+            transform: scale(1.05); /* Makes the pill slightly bigger on hover */
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-40 bg-gray-900 shadow-xl border-b border-blue-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+            <a href="#home" class="text-3xl font-extrabold text-blue-400 hover:text-blue-300 transition duration-300">Al Amin Ifty</a>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                    <li><a href="#about" class="text-gray-300 hover:text-blue-400 transition duration-300 font-medium">About</a></li>
+                    <li><a href="#medium-insight" class="text-gray-300 hover:text-blue-400 transition duration-300 font-medium">Medium</a></li>
+                    <li><a href="#skills" class="text-gray-300 hover:text-blue-400 transition duration-300 font-medium">Expertise</a></li>
+                    <li><a href="#portfolio" class="text-gray-300 hover:text-blue-400 transition duration-300 font-medium">Portfolio</a></li>
+                    <li><a href="#contact" class="text-gray-300 hover:text-blue-400 transition duration-300 font-medium">Connect</a></li>
+                </ul>
+            </nav>
+            <div class="md:hidden">
+                <!-- Simple Mobile Menu Placeholder -->
+                <button class="text-gray-300 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section id="home" class="h-screen flex items-center justify-center bg-gray-900 border-b border-gray-800">
+        <div class="text-center px-4 max-w-4xl animate-slideIn">
+            <h1 class="text-6xl sm:text-7xl lg:text-8xl font-black mb-4 text-white leading-tight">
+                Crafting <span class="text-blue-500">Content</span> That Converts
+            </h1>
+            <p class="text-xl sm:text-2xl text-gray-400 mb-8">
+                Professional SEO Content Writer & Strategist | Driving Organic Growth Across Niche Markets.
+            </p>
+            <a href="#portfolio" class="inline-block px-8 py-3 text-lg font-semibold rounded-full bg-blue-600 text-white shadow-lg transform hover:scale-105 hover:bg-blue-700 transition duration-300 ease-in-out">
+                View My Portfolio
+            </a>
+        </div>
+    </section>
+
+    <!-- 2. About Me Section (UPDATED) -->
+    <section id="about" class="py-20 px-4 max-w-6xl mx-auto">
+        <h2 class="text-4xl font-extrabold text-center mb-12 text-blue-400">About My Approach</h2>
+        <div class="bg-gray-800 p-8 rounded-xl shadow-2xl border border-gray-700">
+            <p class="text-lg text-gray-300 space-y-4">
+                I am <b>Al Amin Ifty</b>, an <b>SEO Content Writer and Strategist</b> dedicated to creating content that drives organic traffic and achieves measurable business goals. My versatile experience spans diverse sectors, but my focus is always on strategic, search-engine-optimized execution.
+                <br><br>
+                My expertise covers the full spectrum of Search Engine Optimization: from detailed <b>On-Page</b> and <b>Off-Page SEO</b> tactics to complex <b>Technical SEO Audits</b> and targeted <b>Local SEO</b> strategies. I also specialize in modern content challenges, including <b>AI SEO</b> and optimizing outputs for <b>Large Language Models (LLM SEO)</b>, ensuring future-proof content performance. I bridge complex technical topics with clear, compelling narratives that resonate with the target audience.
+            </p>
+        </div>
+    </section>
+    
+    <!-- 2.5. Medium / Web3 Insight Section -->
+    <section id="medium-insight" class="py-20 px-4 max-w-6xl mx-auto">
+        <h2 class="text-4xl font-extrabold text-center mb-12 text-blue-400">Web3 & Crypto Insight (Medium)</h2>
+        <div class="bg-gray-800 p-8 rounded-xl shadow-2xl border border-gray-700 text-center">
+            <p class="text-xl text-gray-300 mb-8">
+                Beyond traditional content, I maintain a dedicated presence on Medium, focusing on the future of technology, specifically <b>Blockchain, Decentralized Finance (DeFi), and Cryptocurrencies</b>. 
+                This platform is where I share technical analysis, market commentary, and long-form thought leadership articles exploring the intersection of Web3 and global economics.
+            </p>
+            <!-- IMPORTANT: REPLACE THE PLACEHOLDER BELOW WITH YOUR ACTUAL MEDIUM PROFILE LINK -->
+            <a href="INSERT_YOUR_MEDIUM_PROFILE_LINK_HERE" target="_blank" class="inline-block px-8 py-3 text-lg font-semibold rounded-full bg-blue-600 text-white shadow-lg transform hover:scale-105 hover:bg-blue-700 transition duration-300 ease-in-out">
+                Read My Medium Articles
+            </a>
+        </div>
+    </section>
+
+    <!-- 3. Skills / Expertise Section (Updated with wider gaps) -->
+    <section id="skills" class="py-20 px-4 max-w-6xl mx-auto">
+        <h2 class="text-4xl font-extrabold text-center mb-12 text-blue-400">Content and SEO Expertise</h2>
+        
+        <div class="bg-gray-800 p-8 rounded-xl shadow-2xl border border-gray-700">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Column 1: Core Skills -->
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-2">Core Content & SEO Skills</h3>
+                    <!-- *** Increased gap-x and gap-y for better separation *** -->
+                    <div class="flex flex-wrap gap-x-6 gap-y-4">
+                        <span class="skill-pill">High-Volume Keyword Research</span>
+                        <span class="skill-pill">Advanced Competitor Analysis</span>
+                        <span class="skill-pill">On-Page Optimization (Schema, H-tags)</span>
+                        <span class="skill-pill">Technical SEO Auditing</span>
+                        <span class="skill-pill">Content Gap Analysis</span>
+                        <span class="skill-pill">Strategic Link Building (Off-Page)</span>
+                        <span class="skill-pill">E-A-T/YMYL Compliance</span>
+                        <span class="skill-pill">AI Prompt Engineering</span>
+                        <span class="skill-pill">LLM Content Refinement</span>
+                        <span class="skill-pill">Data-Driven Content Strategy</span>
+                        <span class="skill-pill">SEO Reporting & Analysis</span>
+                        <span class="skill-pill">Content Localization</span>
+                    </div>
+                </div>
+
+                <!-- Column 2: Essential Tools -->
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-2">Essential Tools & Platforms</h3>
+                    <!-- *** Increased gap-x and gap-y for better separation *** -->
+                    <div class="flex flex-wrap gap-x-6 gap-y-4">
+                        <span class="skill-pill">Ahrefs (Full Suite)</span>
+                        <span class="skill-pill">SEMRush (Content Marketing Toolkit)</span>
+                        <span class="skill-pill">Google Analytics 4 (GA4)</span>
+                        <span class="skill-pill">Google Search Console (GSC)</span>
+                        <span class="skill-pill">Surfer SEO / Clearscope</span>
+                        <span class="skill-pill">Screaming Frog</span>
+                        <span class="skill-pill">ChatGPT / Claude (LLMs)</span>
+                        <span class="skill-pill">Yoast / Rank Math SEO</span>
+                        <span class="skill-pill">Frase.io / MarketMuse</span>
+                        <span class="skill-pill">DeepCrawl / Sitebulb</span>
+                        <span class="skill-pill">Google Keyword Planner</span>
+                        <span class="skill-pill">WordPress / Headless CMS</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-2">Top Niche Areas</h3>
+                <!-- *** Increased gap-x and gap-y for better separation *** -->
+                <div class="flex flex-wrap justify-center gap-x-6 gap-y-4">
+                    <span class="skill-pill">Blockchain & Web3 Analysis</span>
+                    <span class="skill-pill">IT & Cyber Security</span>
+                    <span class="skill-pill">Health & Wellness (CBD/Diet)</span>
+                    <span class="skill-pill">Audio & Tech Reviews</span>
+                    <span class="skill-pill">Automotive & RC Vehicles</span>
+                    <span class="skill-pill">Guides & Tech Troubleshooting</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Portfolio Section (Dynamically rendered with new data) -->
+    <section id="portfolio" class="py-20 px-4 max-w-6xl mx-auto">
+        <h2 class="text-4xl font-extrabold text-center mb-12 text-blue-400">Featured Work</h2>
+        <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Portfolio cards will be injected here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- 5. Contact Section -->
+    <section id="contact" class="py-20 px-4 max-w-2xl mx-auto">
+        <h2 class="text-4xl font-extrabold text-center mb-12 text-blue-400">Let's Connect</h2>
+        <form id="contact-form" class="bg-gray-800 p-8 rounded-xl shadow-2xl border border-gray-700">
+            <div class="mb-6">
+                <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Name</label>
+                <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 focus:border-blue-500 focus:ring-blue-500 text-white" required>
+            </div>
+            <div class="mb-6">
+                <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 focus:border-blue-500 focus:ring-blue-500 text-white" required>
+            </div>
+            <div class="mb-6">
+                <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Project Details</label>
+                <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 focus:border-blue-500 focus:ring-blue-500 text-white" required></textarea>
+            </div>
+            <button type="submit" class="w-full py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition duration-300 transform hover:scale-[1.01] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900">
+                Send Inquiry
+            </button>
+        </form>
+        <p id="form-status" class="text-center mt-4 text-green-400"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-blue-500/30 mt-16">
+        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400">&copy; 2025 Al Amin Ifty. All rights reserved.</p>
+            <div class="mt-3 space-x-4">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ifty.alamin54@gmail.com&su=Hello%20there&body=This%20is%20a%20test" class="text-blue-400 hover:text-blue-300 transition duration-300">Email Me</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://www.alaminifty.com" target="_blank" class="text-blue-400 hover:text-blue-300 transition duration-300">Website</a>
+                <a href="https://linkedin.com/in/alaminifty" target="_blank" class="text-blue-400 hover:text-blue-300 transition duration-300">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL STRUCTURE for Article Preview -->
+    <div id="preview-modal" class="fixed inset-0 hidden items-center justify-center modal-backdrop transition-opacity duration-300 opacity-0" aria-modal="true" role="dialog">
+        <div class="bg-gray-800 rounded-xl shadow-2xl max-w-lg w-11/12 mx-auto p-6 transform translate-y-0 transition-transform duration-300 ease-in-out">
+            <div class="flex justify-between items-start mb-4">
+                <h3 id="modal-title" class="text-3xl font-bold text-blue-400">Article Title</h3>
+                <button id="close-modal-btn" class="text-gray-400 hover:text-white transition duration-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            
+            <span id="modal-niche" class="inline-block bg-gray-700 text-sm font-semibold text-white px-3 py-1 rounded-full mb-4">Niche</span>
+
+            <p id="modal-summary" class="text-gray-300 mb-6 leading-relaxed">Article Snippet/Summary goes here...</p>
+
+            <a id="modal-link" href="#" target="_blank" class="block w-full text-center py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition duration-300">
+                Read Full Article (Google Drive)
+            </a>
+            <p class="text-xs text-gray-500 text-center mt-2">Link opens in a new tab</p>
+        </div>
+    </div>
+
+    <script>
+        // --- PORTFOLIO DATA (Your 16 content pieces with placeholders for links) ---
+        const portfolioData = [
+            { 
+                title: "Moondrop Variations vs ThieAudio Monarch MKII", 
+                niche: "Audio Tech & Reviews", 
+                snippet: "The Moondrop Variations offer a unique design and a large number of specifications, while the ThieAudio Monarch MKII excels in build quality, sound quality, and comfort. Recommended for its superior overall experience, especially for bass-fun and all-day comfort.", 
+                link: "INSERT_YOUR_GOOGLE_DRIVE_LINK_HERE_1" 
+            },
+            { 
+                title: "Does Bootcamp Ruin Your Mac?", 
+                niche: "Tech & Software", 
+                snippet: "Bootcamp generally doesn't ruin your Mac, but repartitioning hard drives can cause data loss. While it offers flexibility to run Windows, potential drawbacks include a Windows license cost and rebooting disruptions. Backing up data and addressing GPU issues are crucial for a smooth experience.", 
+                link: "INSERT_YOUR_GOOGLE_DRIVE_LINK_HERE_2" 
+            },
+            { 
+                title: "Can CBD Oil Treat Rheumatoid Arthritis Symptoms?", 
+                niche: "Health & Wellness", 
+                snippet: "Yes, CBD oil can gradually lessen Rheumatoid Arthritis pain and other symptoms like anxiety and poor sleep. Derived from hemp, it has anti-inflammatory properties that may slow RA progression. Always consult a doctor before use, as research on human efficacy is still developing, and mild side effects are possible.", 
+                link: "INSERT_YOUR_GOOGLE_DRIVE_LINK_HERE_3" 
+            },
+            { 
+                title: "Continental Breakfast Vs Hot Breakfast: Which to Pick?", 
+                niche: "Lifestyle & Food", 
+                snippet: "This article compares continental and hot breakfasts, highlighting their differences in price, variety, health benefits, and cooking time. Hot breakfast is recommended for overall nutrition, though continental suits budget-conscious choices.", 
+                link: "INSERT_YOUR_GOOGLE_DRIVE_LINK_HERE_4" 
+            },
+            { 
+                title: "Vitamin D3 and CBD - Why Do They Work So Well?", 
+                niche: "Health & Wellness", 
+                snippet: "Vitamin D3 and CBD are a powerful duo for health, strengthening bones and muscles, boosting immunity, and reducing inflammation. They are best absorbed together with carrier oils due to their fat-soluble nature. Consulting a doctor is essential before use.", 
+                link: "INSERT_YOUR_GOOGLE_DRIVE_LINK_HERE_5" 
+            },
+            { 
+                title: "Best Route To Albuquerque, New Mexico [3 Routes A to Z]", 
+                niche: "Travel & Guides", 
+                snippet: "This guide outlines three routes to Albuquerque, New Mexico, from Phoenix, Baltimore, and Dallas, highlighting scenic stops for each. It also covers prerequisites like rental cars or RVs and hotel bookings, ensuring a comfortable and well-planned trip.", 
+                link: "INSERT_YOUR_GOOGLE_DRIVE_LINK_HERE_6" 
+            },
+            { 
+                title: "1/10 vs 1/16 Scale RC- Which One Should You Purchase?", 
+                niche: "Automotive & RC Vehicles", 
+                snippet: "This article compares 1/10 and 1/16 scale RC cars, concluding the 1/10 scale is superior. It offers better speed (60+ mph), excellent bashing capabilities, greater versatility across terrains, and a more robust, upgradeable chassis.", 
+                link: "INSERT_YOUR_GOOGLE_DRIVE_LINK_HERE_7" 
+            },
+            { 
+                title: "Why Is My Today's Top Fans Not Working On Spotify?", 
+                niche: "Tech & Streaming", 
+                snippet: "Spotify's 'Today's Top Fans' might not work if you're not listening to enough 'Today's Top Hits' tracks. Other causes include browser incompatibility, needing to use a different browser, or website/application bugs requiring updates. Listening to the 'Today's Top Hits' playlist frequently is key.", 
+                link: "INSERT_YOUR_GOOGLE_DRIVE_LINK_HERE_8" 
+            },
+            { 
+                title: "How To Watch Avatar 2: The Way of Water Online at Home?", 
+                niche: "Entertainment & Media", 
+                snippet: "'Avatar: The Way of Water' was theatrically released on December 16, 2022. While not initially online, it was expected to stream on Hulu, HBO Max, and Disney+ after its theatrical run, likely requiring a wait of at least 45 days. It is not available on Netflix.", 
+                link: "INSERT_YOUR_GOOGLE_DRIVE_LINK_HERE_9" 
+            },
+            { 
+                title: "Is Salad Dressing Acidic? We've Explained Everything!", 
+                niche: "Food & Health", 
+                snippet: "Salad dressing is typically acidic, with a pH of 3.50-3.70, due to ingredients like sodium. This can be problematic for those with acid reflux. Choosing low-fat, anti-inflammatory ingredients and preparing fresh salads are key for a healthier option.", 
+                link: "INSERT_YOUR_GOOGLE_DRIVE_LINK_HERE_10" 
+            },
+            { 
+                title: "GAS Bowstrings vs ABB: Crucial Aspects To Look For!", 
+                niche: "Sports & Gear", 
+                snippet: "This article compares GAS Bowstrings and America's Best Bowstrings (ABB). While GAS Bowstrings use BCY material and offer easier tuning, they are more expensive. ABB is cheaper, more durable, and employs advanced technology.", 
+                link: "INSERT_YOUR_GOOGLE_DRIVE_LINK_HERE_11" 
+            },
+            { 
+                title: "How To Store Diastatic Malt Powder?", 
+                niche: "Culinary & Food Science", 
+                snippet: "To store diastatic malt powder effectively, keep it below 45 degrees Celsius, ideally in airtight jars in a dark, dry place. A freezer is preferred over a refrigerator due to lower humidity, which can mess with the malts and enzymes.", 
+                link: "INSERT_YOUR_GOOGLE_DRIVE_LINK_HERE_12" 
+            },
+            { 
+                title: "Human Touch Zero Gravity Chair Reviews", 
+                niche: "Product Reviews", 
+                snippet: "This review highlights four Human Touch zero gravity chairs: PC 420 (overall best for back pain), PC-610 (best for indoor home with massage and heat), Gravis ZG (best for back massage), and a full-body massage chair (best for whole-body massage).", 
+                link: "INSERT_YOUR_GOOGLE_DRIVE_LINK_HERE_13" 
+            },
+            { 
+                title: "CyberSecurity Myths That You Should Be Aware of!", 
+                niche: "IT & Security", 
+                snippet: "This article debunks common cybersecurity myths. It stresses the importance of strong, unique passwords, clarifies that viruses attack all devices, and refutes the idea that cybersecurity is too expensive or only for large companies.", 
+                link: "INSERT_YOUR_GOOGLE_DRIVE_LINK_HERE_14" 
+            },
+            { 
+                title: "Is Canned and Fresh Tuna Heartburn Exist? [Explained]", 
+                niche: "Health & Diet", 
+                snippet: "Tuna generally doesn't cause heartburn or acid reflux and can even aid digestion due to its lean protein. However, excessive consumption, especially of certain types high in mercury, can be problematic. Eating 2-3 times per week of low-mercury varieties is recommended.", 
+                link: "INSERT_YOUR_GOOGLE_DRIVE_LINK_HERE_15" 
+            },
+            { 
+                title: "2x4GB RAM or 4x2GB RAM or 1x8GB RAM?", 
+                niche: "Computer Hardware", 
+                snippet: "For gaming and high-load tasks, 2x4GB dual-channel RAM is best due to better performance with Accelerated Processing Units. For future upgrades and lightweight tasks, 1x8GB RAM is suitable for its higher speed and single slot usage.", 
+                link: "INSERT_YOUR_GOOGLE_DRIVE_LINK_HERE_16" 
+            }
+        ];
+
+        // --- DYNAMIC RENDERING AND MODAL LOGIC ---
+        const portfolioGrid = document.getElementById('portfolio-grid');
+        const modal = document.getElementById('preview-modal');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+        const modalTitle = document.getElementById('modal-title');
+        const modalNiche = document.getElementById('modal-niche');
+        const modalSummary = document.getElementById('modal-summary');
+        const modalLink = document.getElementById('modal-link');
+
+        // Function to render the portfolio items
+        function renderPortfolio() {
+            // Clear existing content just in case
+            portfolioGrid.innerHTML = '';
+            
+            portfolioData.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'portfolio-card bg-gray-800 p-6 rounded-xl border border-gray-700 cursor-pointer transition duration-300 transform hover:scale-[1.02] shadow-xl';
+                card.innerHTML = `
+                    <p class="text-sm font-semibold text-blue-400 mb-2 uppercase">${item.niche}</p>
+                    <h3 class="text-xl font-bold text-white mb-3">${item.title}</h3>
+                    <p class="text-gray-400">${item.snippet.substring(0, 100)}...</p>
+                    <div class="mt-4 text-blue-500 font-medium flex items-center">
+                        View Preview & Link
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </div>
+                `;
+                
+                // Add click listener to open modal
+                card.addEventListener('click', () => openModal(item));
+                portfolioGrid.appendChild(card);
+            });
+        }
+
+        // Function to open the modal
+        function openModal(item) {
+            modalTitle.textContent = item.title;
+            modalNiche.textContent = item.niche;
+            modalSummary.textContent = item.snippet;
+            modalLink.href = item.link;
+            
+            modal.classList.remove('hidden', 'opacity-0');
+            modal.classList.add('flex', 'opacity-100');
+            document.body.classList.add('overflow-hidden'); // Prevent background scrolling
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            modal.classList.remove('flex', 'opacity-100');
+            modal.classList.add('hidden', 'opacity-0');
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        // Event listeners for closing modal
+        closeModalBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal(); // Close if clicking the backdrop
+            }
+        });
+
+        // Form submission handling (for professional feel, prevents actual submission)
+        const contactForm = document.getElementById('contact-form');
+        const formStatus = document.getElementById('form-status');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // In a real deployment, you would send this data to a backend service (like Netlify Forms, Formspree, etc.)
+            formStatus.textContent = 'Thank you for your message! I will be in touch shortly.';
+            contactForm.reset();
+            
+            setTimeout(() => {
+                formStatus.textContent = '';
+            }, 5000);
+        });
+
+        // Initialize rendering
+        window.addEventListener('load', renderPortfolio);
+    </script>
+</body>
+</html>
